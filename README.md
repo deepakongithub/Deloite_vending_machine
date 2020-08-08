@@ -1,4 +1,4 @@
-# Demo project for Spring Boot VendingMachine 
+#  project for Spring Boot VendingMachine 
 
  
  
@@ -28,3 +28,14 @@ mvn spring-boot:run
 - [list of accepted Conis : http://localhost:8080/Conis ](http://localhost:8080/Conis)
 - [list of Products available   : http://localhost:8080/Products/](http://localhost:8080/Products/)
 - [buy product  API : http://localhost:8080/Products/buy/{id}/{_coin} ](http://localhost:8080/Products/buy/11/PENNY)
+
+
+
+## H2 BD details 
+
+- [db dashboard http://localhost:8080/h2-console/](http://localhost:8080/h2-console/)
+
+
+- Username : root
+- Password : password
+- DB name:   vending_db
