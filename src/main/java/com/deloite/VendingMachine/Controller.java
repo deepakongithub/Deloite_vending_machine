@@ -12,7 +12,7 @@ public class Controller {
 	ResponseEntity<?> test(){
 		
 		
-		String message ="Holla";
+		String message ="Hello Binod";
 		
 		return ResponseEntity.ok(message);
 		
