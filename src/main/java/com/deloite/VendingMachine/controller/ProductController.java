@@ -45,7 +45,8 @@ public class ProductController {
 
 		Optional<Product> product;
 		product = productService.findById(id);
-		if (product.isEmpty()) {
+		//System.out.println(product.get().getName()+" =name");
+		if (!product.isPresent()) {
 			throw new ProductNotFoundException(id);
 
 		}

@@ -13,3 +13,18 @@ For building and running the application you need:
 ```shell
 mvn spring-boot:run
 ```
+
+## UML diagram
+
+ diagram
+ 
+- [Controller](VendingMachine/src/main/resources/static/Controller.gif)
+- [Model](VendingMachine/src/main/resources/static/model_uml.gif)
+- [Service](VendingMachine/src/main/resources/static/Service.gif)
+ 
+
+## API END POINT
+
+- [list of accepted Conis : http://localhost:8080/Conis ](http://localhost:8080/Conis)
+- [list of Products available   : http://localhost:8080/Products/](http://localhost:8080/Products/)
+- [buy product  API : http://localhost:8080/Products/buy/{id}/{_coin} ](http://localhost:8080/Products/buy/11/PENNY)
