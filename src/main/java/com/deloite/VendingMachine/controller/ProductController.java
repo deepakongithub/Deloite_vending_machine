@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.deloite.VendingMachine.DTO.PurchaseDTO;
 import com.deloite.VendingMachine.exceptions.CoinNotFoundException;
 import com.deloite.VendingMachine.exceptions.OutOfBudgetException;
 import com.deloite.VendingMachine.exceptions.ProductNotFoundException;
@@ -49,10 +50,10 @@ public class ProductController {
 
 		}
 
-		productService.buy(product.get(), coin);
+		PurchaseDTO purchaseDTO = productService.buy(product.get(), coin);
 
 		// returns the available products
-		return ResponseEntity.ok(product);
+		return ResponseEntity.ok(purchaseDTO);
 
 	}
 
